@@ -1,0 +1,72 @@
+/* Analytics.css */
+
+.orb-sticky {
+    position: sticky;
+    top: 55px;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.analytics-header {
+    background-color: rgb(221, 206, 208);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orb-button.default.add-module {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.orb-alert.promo.title {
+    display: flex;
+    align-items: center;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.orb-alert.promo.title .message {
+    margin-left: 15px;
+}
+
+.orb-alert.promo.title h4 {
+    margin: 0;
+}
+
+.orb-link.underline {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dates-filters.disabled {
+    margin-top: 20px;
+}
+
+.orb-button.neutral-secondary.add-filters {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.orb-typography.p.stripped.small.note {
+    margin: 10px 0 0;
+    color: #888;
+}

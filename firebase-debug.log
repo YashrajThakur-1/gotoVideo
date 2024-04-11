@@ -1,0 +1,399 @@
+[debug] [2023-11-24T13:01:00.182Z] ----------------------------------------------------------------------
+[debug] [2023-11-24T13:01:00.189Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-11-24T13:01:00.190Z] CLI Version:   12.6.1
+[debug] [2023-11-24T13:01:00.190Z] Platform:      win32
+[debug] [2023-11-24T13:01:00.191Z] Node Version:  v18.17.1
+[debug] [2023-11-24T13:01:00.192Z] Time:          Fri Nov 24 2023 18:31:00 GMT+0530 (India Standard Time)
+[debug] [2023-11-24T13:01:00.192Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-24T13:01:00.223Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-11-24T13:01:00.474Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-24T13:01:00.475Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[debug] [2023-11-24T13:01:00.475Z] [iam] checking project bitly-react for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-24T13:01:00.477Z] > refreshing access token with scopes: []
+[debug] [2023-11-24T13:01:00.479Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-24T13:01:00.479Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-24T13:01:00.857Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-24T13:01:00.858Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-24T13:01:00.940Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions [none]
+[debug] [2023-11-24T13:01:00.941Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions x-goog-quota-user=projects/bitly-react
+[debug] [2023-11-24T13:01:00.941Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-24T13:01:01.266Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-11-24T13:01:01.267Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-11-24T13:01:02.668Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions 200
+[debug] [2023-11-24T13:01:02.668Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions {}
+[debug] [2023-11-24T13:01:02.669Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project bitly-react:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-11-24T13:01:02.672Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-24T13:01:03.236Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-24T13:01:03.237Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-24T13:01:03.239Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-24T13:01:03.698Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-24T13:02:10.145Z] ----------------------------------------------------------------------
+[debug] [2023-11-24T13:02:10.148Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-11-24T13:02:10.149Z] CLI Version:   12.6.1
+[debug] [2023-11-24T13:02:10.150Z] Platform:      win32
+[debug] [2023-11-24T13:02:10.150Z] Node Version:  v18.17.1
+[debug] [2023-11-24T13:02:10.151Z] Time:          Fri Nov 24 2023 18:32:10 GMT+0530 (India Standard Time)
+[debug] [2023-11-24T13:02:10.152Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-24T13:02:10.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-24T13:02:10.277Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[debug] [2023-11-24T13:02:10.277Z] [iam] checking project bitly-react for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-24T13:02:10.281Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions [none]
+[debug] [2023-11-24T13:02:10.281Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions x-goog-quota-user=projects/bitly-react
+[debug] [2023-11-24T13:02:10.282Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-24T13:02:11.981Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions 200
+[debug] [2023-11-24T13:02:11.983Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions {}
+[debug] [2023-11-24T13:02:11.984Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project bitly-react:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-11-24T13:02:11.986Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-24T13:02:12.832Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-24T13:02:12.833Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-24T13:02:12.835Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-24T13:02:13.113Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-24T13:02:26.452Z] ----------------------------------------------------------------------
+[debug] [2023-11-24T13:02:26.457Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-11-24T13:02:26.458Z] CLI Version:   12.6.1
+[debug] [2023-11-24T13:02:26.459Z] Platform:      win32
+[debug] [2023-11-24T13:02:26.459Z] Node Version:  v18.17.1
+[debug] [2023-11-24T13:02:26.461Z] Time:          Fri Nov 24 2023 18:32:26 GMT+0530 (India Standard Time)
+[debug] [2023-11-24T13:02:26.462Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-24T13:02:26.623Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-24T13:02:26.624Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[debug] [2023-11-24T13:02:26.625Z] [iam] checking project bitly-react for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-24T13:02:26.628Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions [none]
+[debug] [2023-11-24T13:02:26.629Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions x-goog-quota-user=projects/bitly-react
+[debug] [2023-11-24T13:02:26.629Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-24T13:02:28.283Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions 200
+[debug] [2023-11-24T13:02:28.284Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bitly-react:testIamPermissions {}
+[debug] [2023-11-24T13:02:28.285Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project bitly-react:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-11-24T13:02:28.288Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-24T13:02:28.833Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-24T13:02:28.833Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-24T13:02:28.836Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-24T13:02:29.073Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-24T13:02:59.157Z] ----------------------------------------------------------------------
+[debug] [2023-11-24T13:02:59.160Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-11-24T13:02:59.162Z] CLI Version:   12.6.1
+[debug] [2023-11-24T13:02:59.163Z] Platform:      win32
+[debug] [2023-11-24T13:02:59.163Z] Node Version:  v18.17.1
+[debug] [2023-11-24T13:02:59.165Z] Time:          Fri Nov 24 2023 18:32:59 GMT+0530 (India Standard Time)
+[debug] [2023-11-24T13:02:59.166Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-24T13:02:59.335Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-24T13:02:59.336Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Bitly\go2videoFrontEnd\react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-24T13:03:03.305Z] Using project from CLI flag: bitly-react
+[debug] [2023-11-24T13:03:03.312Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-24T13:03:04.049Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-24T13:03:04.050Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-24T13:03:04.051Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-24T13:03:04.296Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-24T13:03:26.127Z] ----------------------------------------------------------------------
+[debug] [2023-11-24T13:03:26.131Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-11-24T13:03:26.132Z] CLI Version:   12.6.1
+[debug] [2023-11-24T13:03:26.133Z] Platform:      win32
+[debug] [2023-11-24T13:03:26.134Z] Node Version:  v18.17.1
+[debug] [2023-11-24T13:03:26.136Z] Time:          Fri Nov 24 2023 18:33:26 GMT+0530 (India Standard Time)
+[debug] [2023-11-24T13:03:26.136Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-24T13:03:26.264Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-24T13:03:26.265Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Bitly\go2videoFrontEnd\react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-24T13:03:47.190Z] Using project from CLI flag: bitly-react
+[debug] [2023-11-24T13:03:47.198Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-24T13:03:47.940Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-24T13:03:47.940Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-24T13:03:47.941Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-24T13:03:48.178Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-24T13:11:57.221Z] ----------------------------------------------------------------------
+[debug] [2023-11-24T13:11:57.228Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-24T13:11:57.229Z] CLI Version:   12.6.1
+[debug] [2023-11-24T13:11:57.230Z] Platform:      win32
+[debug] [2023-11-24T13:11:57.230Z] Node Version:  v18.17.1
+[debug] [2023-11-24T13:11:57.233Z] Time:          Fri Nov 24 2023 18:41:57 GMT+0530 (India Standard Time)
+[debug] [2023-11-24T13:11:57.233Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-24T13:11:57.432Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-24T13:11:57.433Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Bitly\go2videoFrontEnd\react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-24T13:12:38.419Z] Using project from CLI flag: bitly-react
+[debug] [2023-11-24T13:12:38.424Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-24T13:12:39.032Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-24T13:12:39.033Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-24T13:12:39.033Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-24T13:12:39.305Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-24T13:12:49.519Z] ----------------------------------------------------------------------
+[debug] [2023-11-24T13:12:49.523Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-24T13:12:49.524Z] CLI Version:   12.6.1
+[debug] [2023-11-24T13:12:49.524Z] Platform:      win32
+[debug] [2023-11-24T13:12:49.524Z] Node Version:  v18.17.1
+[debug] [2023-11-24T13:12:49.526Z] Time:          Fri Nov 24 2023 18:42:49 GMT+0530 (India Standard Time)
+[debug] [2023-11-24T13:12:49.526Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-24T13:12:49.682Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-24T13:12:49.684Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Bitly\go2videoFrontEnd\react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-24T13:13:03.001Z] Using project from CLI flag: bitly-react
+[debug] [2023-11-24T13:13:03.006Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-24T13:13:03.663Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-24T13:13:03.664Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-24T13:13:03.665Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-24T13:13:03.908Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-24T13:15:45.013Z] ----------------------------------------------------------------------
+[debug] [2023-11-24T13:15:45.018Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-24T13:15:45.019Z] CLI Version:   12.6.1
+[debug] [2023-11-24T13:15:45.020Z] Platform:      win32
+[debug] [2023-11-24T13:15:45.020Z] Node Version:  v18.17.1
+[debug] [2023-11-24T13:15:45.022Z] Time:          Fri Nov 24 2023 18:45:45 GMT+0530 (India Standard Time)
+[debug] [2023-11-24T13:15:45.022Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-24T13:15:45.150Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-24T13:15:45.152Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Bitly\go2videoFrontEnd\react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-24T13:18:50.509Z] Using project from CLI flag: bitly-react
+[debug] [2023-11-24T13:18:50.513Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-24T13:18:51.223Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-24T13:18:51.223Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-24T13:18:51.225Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-24T13:18:51.497Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-25T06:34:24.767Z] ----------------------------------------------------------------------
+[debug] [2023-11-25T06:34:24.770Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-25T06:34:24.771Z] CLI Version:   12.6.1
+[debug] [2023-11-25T06:34:24.772Z] Platform:      win32
+[debug] [2023-11-25T06:34:24.772Z] Node Version:  v18.17.1
+[debug] [2023-11-25T06:34:24.773Z] Time:          Sat Nov 25 2023 12:04:24 GMT+0530 (India Standard Time)
+[debug] [2023-11-25T06:34:24.774Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-25T06:34:24.931Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-25T06:34:24.932Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Bitly\go2videoFrontEnd\react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-25T06:34:33.912Z] Using project from CLI flag: bitly-react
+[debug] [2023-11-25T06:34:33.915Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-25T06:34:34.844Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-25T06:34:34.845Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-25T06:34:34.845Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-25T06:34:35.131Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-25T06:35:05.667Z] ----------------------------------------------------------------------
+[debug] [2023-11-25T06:35:05.671Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-25T06:35:05.672Z] CLI Version:   12.6.1
+[debug] [2023-11-25T06:35:05.672Z] Platform:      win32
+[debug] [2023-11-25T06:35:05.673Z] Node Version:  v18.17.1
+[debug] [2023-11-25T06:35:05.674Z] Time:          Sat Nov 25 2023 12:05:05 GMT+0530 (India Standard Time)
+[debug] [2023-11-25T06:35:05.674Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-25T06:35:05.846Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-25T06:35:05.847Z] > authorizing via signed-in user (pateljoshita236@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Bitly\go2videoFrontEnd\react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-25T06:35:20.566Z] Using project from CLI flag: bitly-react
+[debug] [2023-11-25T06:35:20.570Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react [none]
+[debug] [2023-11-25T06:35:21.242Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react 403
+[debug] [2023-11-25T06:35:21.243Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bitly-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-25T06:35:21.244Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-25T06:35:21.514Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bitly-react. Please make sure the project exists and your account has permission to access it.

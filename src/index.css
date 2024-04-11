@@ -1,0 +1,153 @@
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/latina');
+
+body {
+  margin: 0;
+  /* font-family: 'Latina'; */
+
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+/* <============navbar==css============> */
+::placeholder {
+  font-size: 12px;
+  display: flex;
+  padding-bottom: 2px;
+  align-items: center;
+}
+.app {
+  display: flex;
+  height: 100%;
+}
+
+.sidenav {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.sidenav.open {
+  width: 200px;
+}
+.fullscreen-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.toggle-button:focus {
+  outline: none;
+}
+
+
+
+
+
+.label {
+  font-size: 16px;
+}
+
+/* Main Content Styles */
+ .main-content {
+  flex-grow: 1;
+  transition: 0.3s;
+}
+input[type="radio"]{
+  appearance: none;
+  border: 1px solid #d3d3d3;
+  width: 30px;
+  height: 30px;
+  content: none;
+  outline: none;
+  margin: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input[type="radio"]:checked {
+ appearance: none;
+ outline: none;
+ padding: 0;
+ content: none;
+ border: none;
+}
+
+input[type="radio"]:checked::before{
+ position: absolute;
+ color: green !important;
+ content: "\00A0\2713\00A0" !important;
+ border: 1px solid #d3d3d3;
+ font-weight: bolder;
+ font-size: 21px;
+}
+
+.input-field:focus {
+  border: 1px #2A5BD7 solid;
+}
+/* .input-field:disabled:focus {
+  border: 1px #2A5BD7 solid;
+} */
+
+.content-carousel {
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+.owl-carousel {
+	width: calc(100% - 170px);
+}
+.owl-carousel div {
+	width: 100%;
+}
+.owl-carousel .owl-controls .owl-dot {
+	background-size: cover;
+	margin-top: 10px;
+}
+.owl-carousel .owl-dots {
+	position: absolute;
+	top: 0;
+	right: -170px;
+	width: 150px;
+	height: 100%;
+}
+.owl-carousel .owl-dot {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.shorturlname{
+
+  font-family: 'Open Sans';
+}
